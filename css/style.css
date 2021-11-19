@@ -358,7 +358,7 @@ body.lock {
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0;
-  padding: 7px 7px 5px 7px;
+  padding: 6px 7px 5px 7px;
   border-radius: 40px;
   background: rgba(0, 0, 0, 0.2);
   color: #fff;
@@ -733,6 +733,9 @@ body.lock {
   opacity: 0.4;
   z-index: -1;
 }
+
+._no-webp .content__img {
+  background-image: url("../img/content/image1.png"); }
 
 .content__img {
   position: absolute;
@@ -1224,5 +1227,7 @@ body.lock {
     grid-template-rows: 60px 1fr;
   }
 }
+
+._webp .content__img { background-image: url(../img/content/image1.webp); }
 
 ._webp .page { background-image: url(../img/bg.webp); }
