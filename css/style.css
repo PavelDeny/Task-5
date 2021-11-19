@@ -734,9 +734,6 @@ body.lock {
   z-index: -1;
 }
 
-._no-webp .content__img {
-  background-image: url("../img/content/image1.png"); }
-
 .content__img {
   position: absolute;
   content: "";
@@ -1227,7 +1224,5 @@ body.lock {
     grid-template-rows: 60px 1fr;
   }
 }
-
-._webp .content__img { background-image: url(../img/content/image1.webp); }
 
 ._webp .page { background-image: url(../img/bg.webp); }
