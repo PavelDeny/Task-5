@@ -739,15 +739,10 @@ body.lock {
   content: "";
   bottom: 60px;
   right: 0;
-  width: 75%;
-  background-position: bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
-  max-width: 100%;
-  height: 100%;
-  max-height: 500px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  max-width: 1000px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .content .swiper-pagination {
@@ -896,6 +891,22 @@ body.lock {
           backdrop-filter: blur(3px);
 }
 
+@media (max-width: 1400px) {
+  .content__img {
+    max-width: 100%;
+    height: 100%;
+    max-height: 500px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+@media (max-width: 1370px) {
+  .content__img {
+    width: 95%;
+  }
+}
+
 @media (max-width: 1024px) {
   .sidebar {
     position: fixed;
@@ -984,6 +995,10 @@ body.lock {
   .desc__text {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .content__img {
+    height: 300px;
   }
 }
 
